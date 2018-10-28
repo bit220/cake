@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+
+<!-- <html lang="ru-RU"> -->
+<head>
+  <meta charset="UTF-8">
+  <title>Конструктор тортов</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.js"></script>
+
+</head>
+<body>
+<div class="main">
+  <h1>Конструктор тортов</h1>
+  <div class="constructor">
+    <div class="constructor-sidebar">
+      <ul class="constructor-steps">
+        <li class="constructor-steps__item">
+           <a class="constructor-steps__link" href="#">Форма</a>
+           <div class="constructor-desc">
+             <div class="constructor-content">
+              <ul class="constructor-content__form">
+                <li class="constructor-content__form-item circle active">
+                  <a href="#" class="form-block">
+                    <img class="form-block__img deactive" src="img/circle_form.svg">
+                    <img class="form-block__img active" src="img/circle_form_active.svg">
+                    <span class="block-elem">Круглая</span>
+                  </a>
+                </li>
+                <li class="constructor-content__form-item square">
+                  <a href="#" class="form-block">
+                    <img class="form-block__img deactive" src="img/square_form.svg">
+                    <img class="form-block__img active" src="img/square_form_active.svg">
+                    <span class="block-elem">Квадратная</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="constructor-steps__item">
+           <a class="constructor-steps__link" href="#">Количество уровней</a>
+           <div class="constructor-desc">
+             <div class="constructor-content">
+              <ul class="constructor-content__level">
+                <li class="constructor-content__level-item">
+                  <a href="#" class="level-block">
+                    <span>1</span>
+                  </a>
+                </li>
+                <li class="constructor-content__level-item">
+                  <a href="#" class="level-block">
+                    <span>2</span>
+                  </a>
+                </li>
+                <li class="constructor-content__level-item">
+                  <a href="#" class="level-block">
+                    <span>3</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="constructor-steps__item">
+           <a href="#" class="constructor-steps__link fill">Начинка</a>
+        </li>
+        <li class="constructor-steps__item">
+           <a href="#" class="constructor-steps__link cover">Покрытие</a>
+           <div class="constructor-desc">
+             <div class="constructor-content">
+               <ul class="constructor-content__cover">
+                   <li class="cover-item cover-item_souffle">
+                     <a href="" class="block-elem">Суфле</a>
+                   </li>
+                   <li class="cover-item cover-item_chocolate">
+                     <a href="" class="block-elem">Шоколадная глазурь</a>
+                   </li>
+                   <li class="cover-item cover-item_mastic">
+                     <a href="" class="block-elem">Сахарная мастика</a>
+                   </li>
+                   <li class="cover-item cover-item_cream">
+                     <a href="" class="block-elem">Масляный крем</a>
+                   </li>
+               </ul>
+            </div>
+          </div>
+        </li>
+        <li class="constructor-steps__item">
+           <a href="#" class="constructor-steps__link">Цвет</a>
+           <div class="constructor-desc">
+             <div class="constructor-content">
+               <ul class="constructor-content__color"></ul>
+             </div>
+           </div>
+        </li>
+        <li class="constructor-steps__item">
+           <a href="#" class="constructor-steps__link decor">Украшения</a>
+        </li>
+        <li class="constructor-steps__item">
+          <a href="#" class="constructor-steps__link">Вес (кг)</a>
+          <div class="constructor-desc">
+            <div class="constructor-content weight">
+              <div class="range-input">
+                <input max="9" min="1" type="range" value="2" class="range">
+                <div class="range-input__dots">
+                  <div class="range-input__dot">
+                    <div class="range-input__number">1
+                    </div>
+                  </div>
+                  <div class="range-input__dot">
+                    <div class="range-input__number">2
+                    </div>
+                  </div>
+                  <div class="range-input__dot">
+                    <div class="range-input__number">3
+                    </div>
+                  </div>
+                  <div class="range-input__dot">
+                    <div class="range-input__number">4
+                    </div>
+                  </div>
+                  <div class="range-input__dot">
+                    <div class="range-input__number">5
+                    </div>
+                  </div>
+                  <div class="range-input__dot">
+                    <div class="range-input__number">6
+                    </div>
+                  </div>
+                  <div class="range-input__dot">
+                    <div class="range-input__number">7
+                    </div>
+                  </div>
+                  <div class="range-input__dot">
+                    <div class="range-input__number">9
+                    </div>                  </div>
+                  <div class="range-input__dot">
+                    <div class="range-input__number">1
+                    1</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="constructor-steps__item">
+          <a href="#" class="constructor-steps__link">Комментарий</a>
+          <div class="constructor-desc">
+            <div class="constructor-content">
+              <div class="constructor-content__comment">
+                <label for="sign">
+                  <p class="comment-title">
+                    Какую надпись Вы хотите увидеть на торте:
+                  </p>
+                </label>
+                <textarea placeholder="Введите текст" name="sign" id="sign" cols="30" rows="10"></textarea>
+                <label for="wish">
+                  <p class="comment-title">
+                    Дополнительные пожелания:
+                  </p>
+                </label>
+                <textarea placeholder="Введите текст" name="wish" id="wish" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <a href="/" class="constructor__reset-button">Сбросить</a>
+      <div class="constructor-info">
+        <div class="constructor-info__title">Торт:</div>
+        <ul class="constructor-info__list">
+          <li class="constructor-info__list-item info-form">Форма: круглая</li>
+          <li class="constructor-info__list-item info-levels">Количество уровней: 1</li>
+          <li class="constructor-info__list-item info-filling">Начинка: </li>
+          <li class="constructor-info__list-item info-cover">Покрытие: </li>
+          <li class="constructor-info__list-item info-color">Цвет: </li>
+          <li class="constructor-info__list-item info-decor">Украшение: </li>
+          <li class="constructor-info__list-item info-weight">Вес: </li>
+          <li class="constructor-info__list-item info-price">Общая сумма: </li>
+        </ul>
+      </div>
+      <button class="constructor__order-button">Заказать</button>
+    </div>
+    <div class="constructor-view">
+      <div class="constructor-view__block">
+        <div class="constructor-view__img view-img-form" style="background-image:url(img/forms/circle.png)"></div>
+        <div class="constructor-view__img view-img-filling"></div>
+        <div class="constructor-view__img view-img-cover"></div>
+        <div class="constructor-view__img view-img-color color-image">
+          <svg height="202" preserveAspectRatio="xMidYMid" viewBox="0 0 664 404" width="333" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="view-img-color__form view-img-color__form_circle">
+            <path d="M663.982,285.000 C663.232,350.767 514.894,404.000 332.000,404.000 C149.106,404.000 0.768,350.767 0.018,285.000 L-0.000,285.000 L-0.000,117.000 L0.153,117.000 C2.218,90.353 27.692,63.441 70.000,44.000 C95.377,32.339 124.570,26.120 160.000,18.000 C166.338,16.547 173.711,12.174 184.000,10.000 C213.736,3.716 271.089,-0.188 327.000,-0.000 C329.975,0.010 340.044,-0.028 343.000,-0.000 C357.351,0.136 369.370,1.642 383.211,2.413 C403.887,3.565 423.931,5.404 443.160,7.863 C451.875,8.977 465.638,8.637 474.000,10.000 C533.118,19.634 575.459,33.458 610.000,53.000 C617.783,57.403 627.109,65.446 633.264,70.216 C651.703,84.504 662.522,100.324 663.855,117.000 L664.000,117.000 L664.000,285.000 L663.982,285.000 Z" fill="currentColor"></path>
+          </svg>
+          <svg height="164" preserveAspectRatio="xMidYMid" viewBox="0 0 663 327" width="332" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="view-img-color__form view-img-color__form_square">
+            <path d="M663.000,322.000 C663.000,324.761 660.761,327.000 658.000,327.000 L5.000,327.000 C2.239,327.000 -0.000,324.761 -0.000,322.000 L-0.000,183.000 C-0.000,186.072 -0.963,173.812 7.000,164.000 L133.000,5.000 C135.396,1.030 140.572,-0.000 144.000,-0.000 L292.000,-0.000 L371.000,-0.000 L519.000,-0.000 C522.428,-0.000 527.604,1.030 530.000,5.000 L656.000,164.000 C663.963,173.812 663.000,186.072 663.000,183.000 L663.000,322.000 Z" fill="currentColor"></path>
+          </svg>
+        </div>
+        <div class="constructor-view__img view-img-decor decoration-image"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal filling -->
+<div class="modal-wrapper filling-wrapper">
+  <div class="modal-container filling-container">
+    <div class="filling-slider half">
+      <div class="filling-slider__view">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="filling-slider__image filling-slider__image_main-img" src="img/filling-slide/0_circle.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="filling-slider__image filling-slider__image_main-img" src="img/filling-slide/1_circle.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="filling-slider__image filling-slider__image_main-img" src="img/filling-slide/2_circle.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="filling-slider__image filling-slider__image_main-img" src="img/filling-slide/3_circle.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="filling-slider__image filling-slider__image_main-img" src="img/filling-slide/4_circle.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="filling-slider__image filling-slider__image_main-img" src="img/filling-slide/5_circle.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="filling-slider__image filling-slider__image_main-img" src="img/filling-slide/6_circle.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <ul class="filling-slider__list">
+          <li class="filling-slider__item">
+            <a class="filling-slider__block" href="#" data-go-to-slide="0">
+              <img class="filling-slider__image small-img" src="img/filling-slide/0_circle.png" alt="">
+              <span class="filling-slider__title">
+                Трюфельный
+              </span>
+            </a>
+          </li>
+          <li class="filling-slider__item">
+            <a class="filling-slider__block" href="#" data-go-to-slide="1">
+              <img class="filling-slider__image small-img" src="img/filling-slide/1_circle.png" alt="">
+              <span class="filling-slider__title">
+                Панна-Кота
+              </span>
+            </a>
+          </li>
+          <li class="filling-slider__item">
+            <a class="filling-slider__block" href="#" data-go-to-slide="2">
+              <img class="filling-slider__image small-img" src="img/filling-slide/2_circle.png" alt="">
+              <span class="filling-slider__title">
+                Мон-ами
+              </span>
+            </a>
+          </li>
+          <li class="filling-slider__item">
+            <a class="filling-slider__block" href="#" data-go-to-slide="3">
+              <img class="filling-slider__image small-img" src="img/filling-slide/3_circle.png" alt="">
+              <span class="filling-slider__title">
+                Дамский каприз
+              </span>
+            </a>
+          </li>
+          <li class="filling-slider__item">
+            <a class="filling-slider__block" href="#" data-go-to-slide="4">
+              <img class="filling-slider__image small-img" src="img/filling-slide/4_circle.png" alt="">
+              <span class="filling-slider__title">
+                Цветочный
+              </span>
+            </a>
+          </li>
+          <li class="filling-slider__item">
+            <a class="filling-slider__block" href="#" data-go-to-slide="5">
+              <img class="filling-slider__image small-img" src="img/filling-slide/5_circle.png" alt="">
+              <span class="filling-slider__title">
+                Черный принц
+              </span>
+            </a>
+          </li>
+          <li class="filling-slider__item">
+            <a class="filling-slider__block" href="#" data-go-to-slide="6">
+              <img class="filling-slider__image small-img" src="img/filling-slide/6_circle.png" alt="">
+              <span class="filling-slider__title">
+                Ай Петри
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="filling-text half">
+      <div class="filling-text__wrapper">
+        <h3 class="filling-text__title">"Трюфельный"</h3>
+        <div class="filling-text__desc">
+          Сочетание тонких белых бисквитных коржей и нежного масленого крема с добавлением какао. <br><br>
+          В 100 г продукта содержится:<br>
+          Белки: 7.0 г<br>
+          Жиры: 22.0 г<br>
+          Углеводы: 43.0 г<br>
+          Энергетическая ценность: 498.0 ккал<br><br>
+          Состав: мука, меланж, сахар, какао, паста какао, желтки, масло сливочное, молоко сгущённое, вино, коньяк, ванилин, конфеты трюфельные.
+        </div>
+        <button class="filling-text__btn">Выбрать</button>
+      </div>
+      <div class="filling-text__wrapper">
+        <h3 class="filling-text__title">"Панна-Кота"</h3>
+        <div class="filling-text__desc">
+          Тонкий бисквит с миксом из апельсинового сока, цедры и воздушным муссом из творожка и сливок.<br><br>
+          В 100 г продукта содержится:<br>
+          Белки: 5.0 г<br>
+          Жиры: 11.0 г<br>
+          Углеводы: 32.0 г<br>
+          Энергетическая ценность: 222.0 ккал<br><br>
+          Состав: мука, меланж, сахар, сметана, вино, коньяк, желатин, молоко сгущённое.
+        </div>
+        <button class="filling-text__btn">Выбрать</button>
+      </div>
+      <div class="filling-text__wrapper">
+        <h3 class="filling-text__title">"Мон-ами"</h3>
+        <div class="filling-text__desc">
+          Ароматный сироп и легкий сливочно-йогуртовый крем с ананасом окутывают тонкий бисквит, подчеркивая его нежность.<br><br>
+          В 100 г продукта содержится:<br>
+          Белки: 5.0 г<br>
+          Жиры: 11.0 г<br>
+          Углеводы: 32.0 г<br>
+          Энергетическая ценность: 222.0 ккал<br><br>
+          Состав: мука, меланж, сахар, сметана, вино, коньяк, желатин, молоко сгущённое, консервированный ананас
+        </div>
+        <button class="filling-text__btn">Выбрать</button>
+      </div>
+      <div class="filling-text__wrapper">
+        <h3 class="filling-text__title">"Дамский каприз"</h3>
+        <div class="filling-text__desc">
+          Гармоничное трио бисквитов: с грецкими орехами, маком и изюмом, пропитанных сливочно-сметанным кремом и покрытых нежным суфле со сгущенным молоком.<br><br>
+          В 100 г продукта содержится:<br>
+          Белки: 22.0 г<br>
+          Жиры: 19.0 г<br>
+          Углеводы: 60.0 г<br>
+          Энергетическая ценность: 398.0 ккал<br><br>
+          Состав: мука, меланж, сахар, мак, орех грецкий, изюм, масло сливочное, сухой белок, агар, кефир, кислота лимонная, вареное сгущенное молоко, сметана, сода, эссенция, глазурь шоколадная белая, глазурь шоколадная темная, ванилин
+        </div>
+        <button class="filling-text__btn">Выбрать</button>
+      </div>
+      <div class="filling-text__wrapper">
+        <h3 class="filling-text__title">"Цветочный"</h3>
+        <div class="filling-text__desc">
+          Легкий бисквит, пропитанный сиропом гармонично сочетается с воздушными коржами безе и арахисом. Неповторимый вкус арахиса подчеркивает нежный масляный крем с добавлением уваренного сгущенного молока.<br><br>
+          В 100 г продукта содержится:<br>
+          Белки: 20.0 г<br>
+          Жиры: 14.0 г<br>
+          Углеводы: 58.0 г<br>
+          Энергетическая ценность: 421.0 ккал<br><br>
+          Состав: мука, сахар, меланж, масло сливочное, молоко сгущенное с/с, молоко сгущенное варёное, вино, коньяк, белок, лимонная кислота, орех арахис, патока, эссенция, какао, ванилин
+        </div>
+        <button class="filling-text__btn">Выбрать</button>
+      </div>
+      <div class="filling-text__wrapper">
+        <h3 class="filling-text__title">"Чёрный принц"</h3>
+        <div class="filling-text__desc">
+          Идеальное сочетание насыщенного вкуса бисквита на сметане с какао и масляного крема с добавлением уваренного сгущенного молока. Необыкновенный торт для сладкоежек.<br><br>
+          В 100 г продукта содержится:<br>
+          Белки: 14.0 г<br>
+          Жиры: 12.0 г<br>
+          Углеводы: 48.0 г<br
+          >Энергетическая ценность: 323.0 ккал<br><br>
+          Состав: мука, сахар, меланж, какао, ванилин, масло сливочное, молоко сгущенное, сода, коньяк, кефир, вино, кислота лимонная
+        </div>
+        <button class="filling-text__btn">Выбрать</button>
+      </div>
+      <div class="filling-text__wrapper">
+        <h3 class="filling-text__title">"Ай-Петри"</h3>
+        <div class="filling-text__desc">
+          Нежный бисквит на сметане с добавлением какао, пропитанный взбитым сметанным кремом.<br><br>
+          В 100 г продукта содержится:<br>
+          Белки: 14.0 г<br>
+          Жиры: 12.0 г<br>
+          Углеводы: 48.0 г<br>
+          Энергетическая ценность: 323.0ккал<br><br>
+          Состав: мука, сахар, какао, меланж, сода, сметана, орех грецкий, глазурь шоколадная, ванилин
+        </div>
+        <button class="filling-text__btn">Выбрать</button>
+      </div>
+    </div>
+    <a href class="close-btn close-fill-btn">
+      Закрыть
+    </a>
+  </div>
+</div>
+
+<!-- modal decor -->
+<div class="modal-wrapper decor-wrapper">
+  <div class="modal-container decor-container">
+    <div class="decor-images half">
+      <div class="decor-images__wrapper">
+        <ul class="decor-images__list">
+          <li class="decor-images__item">
+            <a href="#" class="decor-images__item-wrapper">
+              <div class="decor-images__content">
+                <img class="decor-images__image" src="img/decor_thumbs/0_circle.png" alt="">
+              </div>
+              <div class="decor-images__title">
+                Angry Birds
+              </div>
+            </a>
+          </li>
+          <li class="decor-images__item">
+            <a href="#" class="decor-images__item-wrapper">
+              <div class="decor-images__content">
+                <img class="decor-images__image" src="img/decor_thumbs/1_circle.png" alt="">
+              </div>
+              <div class="decor-images__title">
+                Фея
+              </div>
+            </a>
+          </li>
+          <li class="decor-images__item">
+            <a href="#" class="decor-images__item-wrapper">
+              <div class="decor-images__content">
+                <img class="decor-images__image" src="img/decor_thumbs/2_circle.png" alt="">
+              </div>
+              <div class="decor-images__title">
+                Винкс
+              </div>
+            </a>
+          </li>
+          <li class="decor-images__item">
+            <a href="#" class="decor-images__item-wrapper">
+              <div class="decor-images__content">
+                <img class="decor-images__image" src="img/decor_thumbs/3_circle.png" alt="">
+              </div>
+              <div class="decor-images__title">
+                Единорог
+              </div>
+            </a>
+          </li>
+          <li class="decor-images__item">
+            <a href="#" class="decor-images__item-wrapper">
+              <div class="decor-images__content">
+                <img class="decor-images__image" src="img/decor_thumbs/4_circle.png" alt="">
+              </div>
+              <div class="decor-images__title">
+                Винни-пух
+              </div>
+            </a>
+          </li>
+          <li class="decor-images__item">
+            <a href="#" class="decor-images__item-wrapper">
+              <div class="decor-images__content">
+                <img class="decor-images__image" src="img/decor_thumbs/5_circle.png" alt="">
+              </div>
+              <div class="decor-images__title">
+                Hello Kitty!
+              </div>
+            </a>
+          </li>
+          <li class="decor-images__item">
+            <a href="#" class="decor-images__item-wrapper">
+              <div class="decor-images__content">
+                <img class="decor-images__image" src="img/decor_thumbs/6_circle.png" alt="">
+              </div>
+              <div class="decor-images__title">
+                Черепашки ниндзя
+              </div>
+            </a>
+          </li>
+          <li class="decor-images__item">
+            <a href="#" class="decor-images__item-wrapper">
+              <div class="decor-images__content">
+                <img class="decor-images__image" src="img/decor_thumbs/7_circle.png" alt="">
+              </div>
+              <div class="decor-images__title">
+                Тачки
+              </div>
+            </a>
+          </li>
+          <li class="decor-images__item">
+            <a href="#" class="decor-images__item-wrapper">
+              <div class="decor-images__content">
+                <img class="decor-images__image" src="img/decor_thumbs/8_circle.png" alt="">
+              </div>
+              <div class="decor-images__title">
+                Смешарики
+              </div>
+            </a>
+          </li>
+          <li class="decor-images__item">
+            <a href="#" class="decor-images__item-wrapper">
+              <div class="decor-images__content">
+                <img class="decor-images__image" src="img/decor_thumbs/9_circle.png" alt="">
+              </div>
+              <div class="decor-images__title">
+                Hello Kitty! 02
+              </div>
+            </a>
+          </li>
+          <li class="decor-images__item">
+            <a href="#" class="decor-images__item-wrapper">
+              <div class="decor-images__content">
+                <img class="decor-images__image" src="img/decor_thumbs/none_circle.png" alt="">
+              </div>
+              <div class="decor-images__title">
+                Без украшений
+              </div>
+            </a>
+          </li>
+        </ul>
+        <label class="decor-images__load-image">
+          <input accept="image/*" id="upload-image" type="file">
+          <div class="decor-images__load-image-icon"></div>
+          <div class="decor-images__load-image-text">
+            Загрузите свой рисунок
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="decor-view half"></div>
+    <a href class="close-decor-btn close-btn">
+      Закрыть
+    </a>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="dist/js/main.min.js"></script>
+</body>
+</html>

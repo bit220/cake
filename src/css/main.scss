@@ -1,0 +1,22 @@
+//resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+//normalize
+@import "_misc/normalize.scss";
+
+//media
+@import "_misc/media.scss";
+
+// layout
+@import "_misc/adjustment.scss";
+
+//sections
+@import "sections/sidebar.scss";
+@import "sections/view.scss";
+@import "sections/modal.scss";
+@import "sections/modal-filling.scss";
+@import "sections/modal-decor.scss";
+@import "sections/weight.scss";
