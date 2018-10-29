@@ -9,7 +9,6 @@ var postcss = require('gulp-postcss');
 var rigger = require('gulp-rigger');
 var cssmin = require('gulp-minify-css');
 var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
 var rimraf = require('rimraf');
 var prefixer = require('gulp-autoprefixer');
 
@@ -44,7 +43,7 @@ gulp.task('browserSync', function() {
  })
 });
 
-gulp.task('watch', ['browserSync', 'sass', 'scripts'], function() {
+gulp.task('default', ['browserSync', 'sass', 'scripts'], function() {
  gulp.watch('src/css/**/*.scss', ['sass']);
  gulp.watch('./*.html', browserSync.reload);
  gulp.watch('src/js/**/*.js', ['scripts']);

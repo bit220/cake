@@ -24,13 +24,14 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
-    "imagemin-pngquant": "^6.0.0",
     "postcss-scss": "^2.0.0",
     "postcss-short": "^5.0.0",
     "precss": "^3.1.2",
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "minimatch": "^3.0.4"
   }
 }
